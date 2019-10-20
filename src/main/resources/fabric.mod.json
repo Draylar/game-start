@@ -2,7 +2,7 @@
 {
   "schemaVersion": 1,
   "id": "gamestart",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "name": "Game Start",
   "description": "Provides a config for giving players items when they first load into a world.",

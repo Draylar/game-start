@@ -6,8 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(LootManager.class)
-public interface LootManagerGsonAccessor
-{
+public interface LootManagerGsonAccessor {
     @Accessor("gson")
     Gson getGson();
 }
