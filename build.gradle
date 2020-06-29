@@ -6,7 +6,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 archivesBaseName = "gamestart"
-version = "${version}"
+version = "${version}" + "-" + project.minecraft_version
 
 minecraft {
 }
