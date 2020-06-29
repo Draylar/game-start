@@ -10,13 +10,13 @@
     "Draylar"
   ],
 
-  "license": "GPLv3",
+  "license": "CC0-1.0",
   "icon": "assets/gamestart/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.draylar.gamestart.GameStart"
+      "draylar.gamestart.GameStart"
     ]
   },
   "mixins": [

@@ -1,10 +1,9 @@
 {
   "required": true,
-  "package": "com.github.draylar.gamestart.mixin",
+  "package": "draylar.gamestart.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "FirstJoinMixin",
-    "LootManagerGsonAccessor"
+    "FirstJoinMixin"
   ],
   "injectors": {
     "defaultRequire": 1
