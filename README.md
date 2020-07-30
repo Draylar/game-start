@@ -40,11 +40,11 @@ The config file can be found at `config/gamestart.json5`:
 `firstJoinBroadcastMessage` is a String array representing the message to send to *all* players on the server when a player *first* joins the server.
 `returningJoinBroadcastMessage` is a String array representing the message to send to *all* players on the server when a player re-joins the server, but not on their first join.
 
-In both cases, the phrase `{playername}` will be replaced with the given player's username:
+In both cases, the phrase `{player}` will be replaced with the given player's username:
 
 ```json
 "firstJoinMessage": [ 
-		"Welcome to the server, {playername}!"
+		"Welcome to the server, {player}!"
 ]
 ```
 
