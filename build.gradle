@@ -27,19 +27,19 @@ dependencies {
 	modApi "net.fabricmc:fabric-loader:${project.loader_version}"
 	modApi "net.fabricmc.fabric-api:fabric-api:${project.api_version}"
 
-	modCompile "io.github.prospector:modmenu:${project.mod_menu_version}"
+	modCompile ("io.github.prospector:modmenu:${project.mod_menu_version}") {
+		exclude group: "net.fabricmc.fabric-api"
+	}
 
 	// config
-	modCompile "me.shedaniel.cloth:config-2:${project.cloth_config_version}"
-	include "me.shedaniel.cloth:config-2:${project.cloth_config_version}"
 	modCompile "me.sargunvohra.mcmods:autoconfig1u:${project.auto_config_version}"
 	include "me.sargunvohra.mcmods:autoconfig1u:${project.auto_config_version}"
 
 	// cca for player data
-	modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:2.4.1"
-	include "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:2.4.1"
-	modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:2.4.1"
-	include "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:2.4.1"
+	modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:2.6.0"
+	include "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:2.6.0"
+	modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:2.6.0"
+	include "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:2.6.0"
 }
 
 // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task

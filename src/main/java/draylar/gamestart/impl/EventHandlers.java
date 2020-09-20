@@ -12,6 +12,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Vec3d;
 
 import java.util.List;
 import java.util.Objects;
@@ -60,7 +61,7 @@ public class EventHandlers {
         LootContext.Builder builder =
                 new LootContext.Builder(world)
                         .random(world.random)
-                        .parameter(LootContextParameters.POSITION, player.getBlockPos());
+                        .parameter(LootContextParameters.ORIGIN, player.getPos());
 
         // roll & give loot to player
         List<ItemStack> stacks = supplier.generateLoot(builder.build(LootContextTypes.CHEST));
