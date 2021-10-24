@@ -73,24 +73,6 @@ Here is a simple table that gives players an apple when they first join:
 }
 ```
 
-### For Developers
-
-Game Start provides a `PlayerJoinCallback` event. It is called when a player joins the server.
-Listeners get access to the `PlayerEntity` that joined the server,
- and a boolean which describes whether the player has joined the server before.
- 
-Here is a simple implementation that gives a player apples when they first join a server:
-
-```java
-PlayerJoinCallback.EVENT.register((player, isPlayerNew) -> {
-    if(isPlayerNew) {
-        player.giveItemStack(new ItemStack(Items.APPLE, 16));
-    }
-})
-```
-
-Developers should *not* override or utilize the end-user functionality of the mod (loot tables/config).
-
 ### License
 Game Start is licensed under the **public domain** license CC0-1.0. 
 You are free to do whatever you want with the mod, code, and assets in this repository.

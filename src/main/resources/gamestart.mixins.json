@@ -3,7 +3,7 @@
   "package": "draylar.gamestart.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "FirstJoinMixin"
+    "PlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
